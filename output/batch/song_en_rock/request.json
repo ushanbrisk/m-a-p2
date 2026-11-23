@@ -1,0 +1,9 @@
+{
+  "style": "english indie rock, male vocal, distorted electric guitar, driving drums, raw and energetic",
+  "lyrics": "[Verse]\nCity lights are dimming slow\nFootsteps echo where the lost ones go\nEvery shadow tells a story untold\nI'm chasing something pure as gold\n\n[Chorus]\nHold on, hold on, through the night we rise\nLike a phoenix under endless skies\nEvery tear becomes a song\nWhere we belong is where we're strong\n",
+  "cot": "full",
+  "seed": 42,
+  "abc": null,
+  "cfg_scale": null,
+  "id": "song_en_rock"
+}

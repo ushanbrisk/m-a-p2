@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "expected": 3,
+  "failed": 0,
+  "results": [
+    {
+      "id": "song_zh_pop",
+      "status": "complete",
+      "seconds": 41.7,
+      "audio_seconds": 64.99866666666667,
+      "output": "/home/luke/distributed_machine_learning/m-a-p2/output/batch/song_zh_pop"
+    },
+    {
+      "id": "song_en_rock",
+      "status": "complete",
+      "seconds": 37.7,
+      "audio_seconds": 62.718666666666664,
+      "output": "/home/luke/distributed_machine_learning/m-a-p2/output/batch/song_en_rock"
+    },
+    {
+      "id": "song_zh_ballad",
+      "status": "complete",
+      "seconds": 42.2,
+      "audio_seconds": 78.87866666666666,
+      "output": "/home/luke/distributed_machine_learning/m-a-p2/output/batch/song_zh_ballad"
+    }
+  ]
+}

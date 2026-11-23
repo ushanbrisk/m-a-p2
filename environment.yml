@@ -1,0 +1,28 @@
+# YuE2 推理环境 (conda)
+#
+#   conda env create -f environment.yml
+#
+# 说明:
+#   - python 3.12: audiocraft env 是 3.9, 装不了 torch 2.10 / transformers 4.57.6,
+#     所以单独开一个 env。YuE2 wheel 的 Requires-Python 是 >=3.10, 官方推荐 3.12。
+#   - pip 段的版本与 requirements.txt 一致, 由 yue2_infer-0.1.5 wheel 的 METADATA 决定。
+#   - torch 必须走 cu128 源 (本机 NVIDIA 驱动 570.124.04, 最高支持 CUDA 12.8)。
+#   - 系统层还需要 libsndfile (soundfile 读写音频用):
+#       sudo apt-get install -y libsndfile1
+#     本机已装 libsndfile 1.0.28, 无需重复。
+name: yue2
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip=24.3.1
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu128
+      - torch==2.10.0
+      - transformers==4.57.6
+      - huggingface-hub==0.36.2
+      - safetensors==0.7.0
+      - tiktoken==0.12.0
+      - numpy==2.2.6
+      - soundfile==0.13.1
+      - accelerate==1.13.0

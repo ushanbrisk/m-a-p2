@@ -1,0 +1,9 @@
+{
+  "style": "mandarin ballad, warm emotional piano, slow tempo, intimate close vocal, reverb, clear diction",
+  "lyrics": "[Verse]\n你走了以后 房间很空\n只剩窗台那盆安静的绿\n我把你的杯子 摆回原处\n好像你只是出门买包盐\n\n[Chorus]\n如果想念有声音\n应该是窗外的雨\n如果想念有形状\n是桌上没折的信\n",
+  "cot": "full",
+  "seed": 7,
+  "abc": null,
+  "cfg_scale": null,
+  "id": "song_zh_ballad"
+}

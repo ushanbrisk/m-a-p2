@@ -1,0 +1,23 @@
+# YuE2 推理依赖 —— 版本不是随便挑的, 是 yue2_infer-0.1.5 wheel 的
+# METADATA 里写死的 Requires-Dist, 版本对不上 pip 会直接拒绝安装。
+#
+#   torch==2.10.0           CUDA 12.8 构建 (本机驱动 570.124.04 / CUDA 12.8)
+#   transformers==4.57.6    模型 config.json 里 transformers_version 也是这个
+#   huggingface-hub==0.36.2 注意: 本机 base env 是 1.32.0, 这里必须降级
+#   safetensors==0.7.0
+#   tiktoken==0.12.0        文本 tokenizer (qwen.tiktoken)
+#   numpy==2.2.6
+#   soundfile==0.13.1       读写 flac/wav, 依赖系统 libsndfile
+#   accelerate==1.13.0
+#
+# torch 从 PyTorch 官方 cu128 源装, 不要从 PyPI 默认源装 (默认源可能是 cu126/cu129 轮子)。
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+torch==2.10.0
+transformers==4.57.6
+huggingface-hub==0.36.2
+safetensors==0.7.0
+tiktoken==0.12.0
+numpy==2.2.6
+soundfile==0.13.1
+accelerate==1.13.0

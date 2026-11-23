@@ -1,0 +1,9 @@
+{
+  "style": "mandarin pop, female vocal, warm acoustic guitar, soft drums, clear diction, mid tempo",
+  "lyrics": "[Verse]\n晚风轻轻吹过窗前\n你留下的笑还在昨天\n街灯把影子拉得很长\n我数着星星回到起点\n\n[Chorus]\n让这首歌陪你走远\n把所有想念唱成明天\n就算世界暂时安静\n我们还有这一段旋律\n",
+  "cot": "full",
+  "seed": 831001,
+  "abc": null,
+  "cfg_scale": null,
+  "id": "song_zh_pop"
+}
